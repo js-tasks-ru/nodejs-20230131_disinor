@@ -3,7 +3,7 @@ const LimitExceededError = require('../LimitExceededError');
 const expect = require('chai').expect;
 const sinon = require('sinon');
 
-describe('streams/limit-size-stream', () => {
+describe.only('streams/limit-size-stream', () => {
   describe('LimitSizeStream', () => {
     it('стрим передает поступающие данные без изменений', (done) => {
       const limitStream = new LimitSizeStream({limit: 3, encoding: 'utf-8'});
