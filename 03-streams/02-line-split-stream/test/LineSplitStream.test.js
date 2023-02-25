@@ -63,7 +63,6 @@ describe('streams/line-split-stream', () => {
 
         done();
       });
-
       lines.write(['a', 'b', 'c', 'd', 'e', 'f'].join(os.EOL));
       lines.end();
     });
